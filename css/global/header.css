@@ -23,7 +23,6 @@
 }
 
 .header-menu a {
-  color: #ffffff;
   display: inline-block;
   padding: 16px 0px;
   font-size: 1.125rem;
@@ -35,10 +34,10 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: #ffffff;
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
+  background: #ffffff;
 }
 .header-menu a:hover:after {
   width: 100%;
