@@ -4,17 +4,20 @@
 }
 .sobre-lista h2 {
   margin-bottom: 40px;
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+}
+.sobre-lista h2::before {
+  content: "";
+  display: inline-block;
+  background-color: #e31111;
+  height: 35px;
+  width: 12px;
+  margin-right: 8px;
 }
 .sobre-lista h3 {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
-  text-align: center;
+  vertical-align: middle;
 }
 .sobre-lista h3::before {
   content: "";
@@ -23,16 +26,34 @@
   height: 8px;
   width: 12px;
   margin-right: 8px;
+  transition: width 0.2s;
+}
+.sobre-lista ul:hover h3::before {
+  width: 24px;
 }
 .sobre-lista ul {
   display: flex;
   gap: 40px;
-  padding: 0 20px;
+  padding: 0 20px 20px;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  overflow-x: auto;
 }
-
+.sobre-lista li {
+  flex: 1;
+  min-width: 280px;
+}
 .sobre-lista img {
   margin-bottom: 16px;
+}
+
+@media (max-width: 800px) {
+  .sobre-lista {
+    padding-bottom: 60px;
+  }
+  .sobre-lista ul {
+    gap: 20px;
+  }
 }
