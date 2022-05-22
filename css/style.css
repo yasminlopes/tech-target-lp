@@ -1,5 +1,6 @@
 @import "./global/header.css";
 @import "./global/global.css";
+@import "./global/footer.css";
 
 /* UTILIDADES */
 @import "./utilidades/componentes.css";
@@ -9,6 +10,13 @@
 /* HOME */
 @import "./home/introducao.css";
 @import "./home/vantagens.css";
+@import "./home/publicacoes.css";
 
 /* SOBRE */
 @import "./sobre/sobre.css";
+
+/*
+Desenvolvido por Yasmin Lopes
+github.com/yasminlopes
+Projeto Integrador 02 - ADS Unimar
+*/

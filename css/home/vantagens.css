@@ -23,6 +23,7 @@
 .vantagens-conteudo > span {
   margin-bottom: 20px;
   display: block;
+  text-transform: uppercase;
 }
 
 .vantagens-conteudo h2 {
