@@ -12,11 +12,21 @@
 @import "./home/vantagens.css";
 @import "./home/publicacoes.css";
 
+/* CADASTRO E LOGIN*/
+@import "./cadastro_login/cadastro.css";
+@import "./cadastro_login/login.css";
+
+/* FORMULÁRIOS */
+@import "./formularios/formulario.css";
+
 /* SOBRE */
 @import "./sobre/sobre.css";
 
+/* CONTATO */
+@import "./contato/contato.css";
+
 /*
-Desenvolvido por Yasmin Lopes
+Front-end desenvolvido por Yasmin Lopes
 github.com/yasminlopes
 Projeto Integrador 02 - ADS Unimar
 */

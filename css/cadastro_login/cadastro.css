@@ -1,0 +1,124 @@
+#cadastro {
+  background: linear-gradient(var(--cor-5) 600px, var(--cor-4) 0px);
+}
+
+.cadastro {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.cadastro h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cadastro h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-3);
+  position: absolute;
+  left: -12px;
+}
+
+.cadastro-tipo,
+.cadastro-dados {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-tipo {
+  border-radius: 5px 0 0 5px;
+  gap: 20px;
+  background: #111111;
+}
+.cadastro-tipo label {
+  background: #ccc;
+  padding: 20px;
+  display: inline-block;
+}
+
+#techtarget:checked + label {
+  background: #fff;
+}
+
+#cadastro-techtarget {
+  display: block;
+}
+
+.cadastro-dados {
+  border-radius: 0 5px 5px 0;
+  background: var(--cor-1);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Raleway", sans-serif;
+  margin-bottom: 4px;
+}
+
+.cadastro-conteudo {
+  display: none;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form input[type="phone"],
+.form textarea {
+  font: 400 1rem/1.5 "Raleway", sans-serif;
+  background-color: #f7f7f7;
+  border: 1px solid #f4f4f4;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form input[type="date"]:focus,
+.form input[type="phone"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-3);
+  background: var(--cor-1);
+  box-shadow: 0 0 0 2px #ff8888;
+}
+
+@media (max-width: 1200px) {
+  .cadastro-tipo,
+  .cadastro-dados {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cadastro {
+    grid-template-columns: 1fr;
+  }
+  .cadastro-tipo {
+    border-radius: 5px 5px 0 0;
+    background: var(--cor-12);
+  }
+  .cadastro-dados {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cadastro-tipo {
+    grid-template-columns: 1fr;
+  }
+}

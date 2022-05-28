@@ -64,6 +64,12 @@
   .vantagens-imagem {
     display: none;
   }
+  .vantagens img {
+    display: none;
+  }
+  .vantagens-imagem {
+    display: none;
+  }
   .vantagens a {
     margin-bottom: 60px;
   }
